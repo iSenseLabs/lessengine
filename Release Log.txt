@@ -1,0 +1,4 @@
+LessEngine 1.0
+	- Initial release
+
+Please send your feature requests to http://isenselabs.com/users/support

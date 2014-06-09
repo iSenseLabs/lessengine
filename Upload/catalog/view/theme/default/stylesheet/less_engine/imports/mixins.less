@@ -1,0 +1,66 @@
+/* Sample Mixin Elements */
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.opacity (@opacity: 1) {
+	-ms-filter: e(~'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + @opacity * 100 + ')');
+	filter: e(~'alpha(opacity=' + @opacity * 100 + ~')');
+	-moz-opacity:@opacity;
+	-webkit-opacity:@opacity;
+	-khtml-opacity:@opacity;
+	opacity:@opacity;
+}
+.columns (@columns: 1) {
+	-webkit-columns: 	@columns;
+	-moz-columns: 		@columns;
+	columns: 			@columns;
+}
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;
+	transition:      	@transition;  
+}
+.transform (@string){
+	-webkit-transform:   @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+	transform: 		 	 @string;
+}
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+.box-sizing (@string: border-box) {
+	-webkit-box-sizing: @string;
+	-moz-box-sizing:    @string;
+	box-sizing:         @string;
+}
+.simple-gradient(@bottom, @top) {
+	background-color: @bottom; /* layer fill content */
+	background-image: -moz-linear-gradient(bottom, @bottom 0%, @top 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, @bottom 0%, @top 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, @bottom 0%, @top 100%); /* gradient overlay */
+	background-image: linear-gradient(bottom, @bottom 0%, @top 100%); /* gradient overlay */
+}
+.stripe-gradient(@bottom, @top) {
+	background-color: @bottom; /* layer fill content */
+	background-image: -moz-linear-gradient(bottom, @bottom 0%, @bottom 50%, @top 50%, @top 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, @bottom 0%, @bottom 50%, @top 50%, @top 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, @bottom 0%, @bottom 50%, @top 50%, @top 100%); /* gradient overlay */
+	background-image: linear-gradient(bottom, @bottom 0%, @bottom 50%, @top 50%, @top 100%); /* gradient overlay */
+}
+.no-select() {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; // IE10+
+    user-select: none;	
+}

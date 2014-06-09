@@ -1,0 +1,20 @@
+LessEngine Installation Instructions
+----------------------------------------
+
+This installation instructions assume that you have either fresh or customized installation of OpenCart.
+
+1) Unzip the downloaded ZIP file into a new folder
+
+2) Make sure that you have vQmod downloaded and installed. Installation instructions here: https://code.google.com/p/vqmod/wiki/Install_OpenCart
+
+3) Copy all files from /Upload folder over your current OpenCart installation preserving the directory structure.
+
+4) Login to your OpenCart admin panel and go to Extensions > Modules, find LessEngine, and click the [Install] link. Then the screen flickers and [Edit] link shows up.
+
+5) Click the [Edit] link. 
+
+The LessEngine panel is displayed. Now, this is the place where you edit/customize your LessEngine module. Try clicking around the menu items to get acquainted with the module.
+
+6) Now LessEngine is installed.
+
+Please address your questions, comments or issues to http://isenselabs.com/users/support
